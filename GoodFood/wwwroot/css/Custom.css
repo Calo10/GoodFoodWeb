@@ -1,0 +1,22 @@
+﻿.FacebookButton{
+    width: 100% !important;
+}
+
+#HeaderLogo {
+    height: 84px;
+}
+
+#FooterImage{
+
+}
+
+.BoxShadow {
+    box-shadow: -1px 0px 26px -6px rgba(0,0,0,0.66);
+    border-radius: 10px;
+    padding-top: 100px !important;
+    padding-right: 70px !important;
+    padding-bottom: 100px !important;
+    padding-left: 70px !important;
+    background-color: #ffffff !important;
+}
+
