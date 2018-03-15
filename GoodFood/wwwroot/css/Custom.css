@@ -20,3 +20,10 @@
     background-color: #ffffff !important;
 }
 
+.bgimg {
+    background-image: url('../images/background_Image_1.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+

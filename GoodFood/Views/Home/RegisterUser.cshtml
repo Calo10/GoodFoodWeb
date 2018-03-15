@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewData["Title"] = "RegisterUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- bread-crumb start here -->
+<div class="bread-crumb">
+    <img src="@Url.Content("~/images/top-banner.jpg")" class="img-responsive" alt="banner-top" title="banner-top">
+    <div class="container">
+        <div class="matter">
+            <h2>Registro de Usuario</h2>
+        </div>
+    </div>
+</div>
+<!-- bread-crumb end here -->
+
+<!-- register start here -->
+<div class="register bgimg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 BoxShadow" style="margin-top:25px;">
+                <div class="commontop text-left">
+                    <h4>
+                        Crear Cuenta
+                    </h4>
+                </div>
+                <p>Bienvenido a Good Food</p>
+                <form method="post" enctype="multipart/form-data">
+                    <!--NAME-->
+                    <div class="form-group">
+                        <label>Nombre *</label>
+                        <input type="text" name="username" value="" placeholder="John Doe" id="input-username" class="form-control" />
+                    </div>
+                    <!--EMAIL-->
+                    <div class="form-group">
+                        <label>Correo Electrónico *</label>
+                        <input type="text" name="mail" value="" placeholder="Your Email" id="input-mail" class="form-control" />
+                    </div>
+                    <!--PASSWORD-->
+                    <div class="form-group">
+                        <label>Password *</label>
+                        <input type="text" name="password1" value="" placeholder="Password" id="input-password1" class="form-control" />
+                    </div>
+                    <!--CONFIRM PASSWORD-->
+                    <div class="form-group">
+                        <label>Confirmar Password*</label>
+                        <input type="text" name="confirmpassword" value="" placeholder="Password" id="input-confirmpassword" class="form-control" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">SIGN up</button>
+                    <div class="links">
+                        <input class="checkclass checkbox-inline" type="checkbox">Acepta Terminos y Condiciones
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- register end here -->
