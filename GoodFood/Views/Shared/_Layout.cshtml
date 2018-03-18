@@ -19,6 +19,9 @@
     <!-- stylesheet -->
     <link href=@Url.Content("~/Template/css/style.css") rel="stylesheet" type="text/css" />
     <link href=@Url.Content("~/css/custom.css") rel="stylesheet" type="text/css" />
+
+    @RenderSection("CSS", false)
+
 </head>
 <body class="header2">
     <!-- header start here-->
@@ -74,7 +77,7 @@
                                 </li>
                                 <li class="des text-center">Si eres un nuevo usuario</li>
                                 <li class="text-center">
-                                    <a href="RegisterUser">Registrate</a>
+                                    <a href="Home/RegisterUser">Registrate</a>
                                 </li>
                                 <li>
                                     <button class="btn" type="button" onclick="location.href='login_register.html'">Login</button>
@@ -124,6 +127,8 @@
         </div>
     </footer>
     <!-- footer end here -->
+    <!-- modulejs -->
+    <script src="@Url.Content("~/lib/modulejs/modulejs-1.9.0.min.js")"></script>
     <!-- jquery -->
     <script src="@Url.Content("~/Template/js/jquery.2.1.1.min.js")"></script>
     <!-- bootstrap js -->
@@ -134,5 +139,10 @@
     <script src="@Url.Content("~/Template/js/internal.js")"></script>
     <!-- owlcarousel js -->
     <script src="@Url.Content("~/Template/js/owl-carousel/owl.carousel.min.js")"></script>
+    <!-- Utilities -->
+    <script type="text/javascript" src="@Url.Content("~/js/Controller/Utilities.js")"></script>
+
+    @RenderSection("JS", false)
+
 </body>
 </html>

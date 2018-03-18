@@ -5,6 +5,12 @@
 }
 
 
+@section CSS{
+
+
+
+}
+
 <!-- bread-crumb start here -->
 <div class="bread-crumb">
     <img src="@Url.Content("~/images/top-banner.jpg")" class="img-responsive" alt="banner-top" title="banner-top">
@@ -15,7 +21,6 @@
     </div>
 </div>
 <!-- bread-crumb end here -->
-
 <!-- register start here -->
 <div class="register bgimg">
     <div class="container">
@@ -27,34 +32,59 @@
                     </h4>
                 </div>
                 <p>Bienvenido a Good Food</p>
-                <form method="post" enctype="multipart/form-data">
+                <form id="frmSignUp" method="post" enctype="multipart/form-data">
                     <!--NAME-->
                     <div class="form-group">
                         <label>Nombre *</label>
-                        <input type="text" name="username" value="" placeholder="John Doe" id="input-username" class="form-control" />
+                        <input id="txtName" type="text" name="username" value="" placeholder="John" class="form-control" />
+                    </div>
+                    <!--First Lastname-->
+                    <div class="form-group">
+                        <label>Pimer Apellido *</label>
+                        <input id="txtFirstLastName" type="text" name="username" value="" placeholder="Doe" class="form-control" />
+                    </div>
+                    <!--Second Lastname-->
+                    <div class="form-group">
+                        <label>Segundo Apellido *</label>
+                        <input id="txtSecondLastName" type="text" name="username" value="" placeholder="Smith" class="form-control" />
                     </div>
                     <!--EMAIL-->
                     <div class="form-group">
                         <label>Correo Electrónico *</label>
-                        <input type="text" name="mail" value="" placeholder="Your Email" id="input-mail" class="form-control" />
+                        <input id="txtEmail" type="text" name="mail" value="" placeholder="Your Email" class="form-control" />
                     </div>
                     <!--PASSWORD-->
                     <div class="form-group">
                         <label>Password *</label>
-                        <input type="text" name="password1" value="" placeholder="Password" id="input-password1" class="form-control" />
+                        <input id="txtPassword" type="text" name="password1" value="" placeholder="Password" class="form-control" />
                     </div>
                     <!--CONFIRM PASSWORD-->
                     <div class="form-group">
                         <label>Confirmar Password*</label>
-                        <input type="text" name="confirmpassword" value="" placeholder="Password" id="input-confirmpassword" class="form-control" />
+                        <input id="txtConfirmPassword" type="text" name="confirmpassword" value="" placeholder="Password" class="form-control" />
                     </div>
-                    <button type="submit" class="btn btn-primary">SIGN up</button>
+                    <button id="btnRegisterUser" type="submit" class="btn btn-primary">REGISTRARSE</button>
                     <div class="links">
-                        <input class="checkclass checkbox-inline" type="checkbox">Acepta Terminos y Condiciones
+                        <input class="checkclass checkbox-inline" type="checkbox">Aceptar Terminos y Condiciones
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+@section JS{
+
+    <script>
+        var routes = {
+            SaveUser: '@Url.Action("SaveUser", "Home")'
+        };
+
+    </script>
+
+    <script type="text/javascript" src="@Url.Content("~/js/Model/HomeModel.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/View/HomeView.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/Controller/HomeController.js")"></script>
+
+}
 <!-- register end here -->

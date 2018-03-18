@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using GoodFood.Models;
+using Newtonsoft.Json;
 
 namespace GoodFood.Controllers
 {
@@ -34,6 +35,26 @@ namespace GoodFood.Controllers
             ViewData["Message"] = "Your contact page.";
 
             return View();
+        }
+
+
+        public string SaveUser(string pUser)
+        {
+
+            Response ans = null;
+
+            try
+            {
+                UserModel a = JsonConvert.DeserializeObject<UserModel>(pUser);
+
+                ans = UserModel.SaveUser(a);
+            }
+            catch (Exception ex)
+            {
+                Error();
+            }
+
+            return JsonConvert.SerializeObject(ans);
         }
 
         public IActionResult Error()
