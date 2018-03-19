@@ -35,10 +35,7 @@ namespace GoodFood.Models
                 cmd.Parameters.AddWithValue("@Password",  user.Password);
 
                 MySqlDataReader rdr = cmd.ExecuteReader();
-                while (rdr.Read())
-                {
-                    Console.WriteLine(rdr[0] + " --- " + rdr[1]);
-                }
+             
                 rdr.Close();
 
                 if (rdr.RecordsAffected != 0)
@@ -51,6 +48,46 @@ namespace GoodFood.Models
             {
                 return new Response { IsSuccessful = false, ResponseMessage = ex.ToString()};
             }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public static Response Login(UserModel user)
+        {
+
+            MySqlConnection conn = new MySqlConnection(AppManagement.connStr);
+
+            try
+            {
+                conn.Open();
+
+                string SP = AppManagement.FN_Login; ;
+                MySqlCommand cmd = new MySqlCommand(SP, conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@Email", user.Email);
+                cmd.Parameters.AddWithValue("@Password", user.Password);
+                cmd.Parameters.Add("@ID", MySqlDbType.Int32);
+                cmd.Parameters["@ID"].Direction = ParameterDirection.ReturnValue;
+
+                MySqlDataReader rdr = cmd.ExecuteReader();
+              
+
+                int res = (Int32)cmd.Parameters["@ID"].Value;
+
+                if (res != 0)
+                    return new Response { IsSuccessful = true, ResponseMessage=AppManagement.MSG_LoginUser_Success, AffectedID = res};
+
+                return new Response { IsSuccessful = false, ResponseMessage = AppManagement.MSG_LoginUser_Failure};
+
+            }
+            catch (Exception ex)
+            {
+                return new Response { IsSuccessful = false, ResponseMessage = ex.ToString() };
+            }
+
         }
     }
 }

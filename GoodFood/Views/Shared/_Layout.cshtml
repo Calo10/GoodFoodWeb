@@ -18,7 +18,7 @@
     <link href=@Url.Content("~/Template/css/ele-style.css") rel="stylesheet" type="text/css" />
     <!-- stylesheet -->
     <link href=@Url.Content("~/Template/css/style.css") rel="stylesheet" type="text/css" />
-    <link href=@Url.Content("~/css/custom.css") rel="stylesheet" type="text/css" />
+    <link href=@Url.Content("~/css/Custom.css") rel="stylesheet" type="text/css" />
 
     @RenderSection("CSS", false)
 
@@ -69,18 +69,32 @@
                                 <li>
                                     <button class="fac FacebookButton" type="button">Facebook</button>
                                 </li>
-                                <li>
-                                    <a href="#"><i class="icon_profile"></i>Mi Cuenta</a>
+                                <li style="height: 140px;">
+                                    <div>
+                                        <div class="LoginOption col-md-12">
+                                            <div class="col-md-2">
+                                                <a><i class="icon_profile"></i></a>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <input id="txtMailLogin" class="form-control" type="text" placeholder="correo"/>
+                                            </div>
+                                        </div>
+                                        <div class="LoginOption col-md-12">
+                                            <div class="col-md-2">
+                                                <a><i  class="icon_archive"></i></a>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <input id="txtPasswordLogin" class="form-control" type="password" placeholder="password"/>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li>
-                                    <a href="#"><i class="icon_archive"></i>Mis Ordenes</a>
-                                </li>
-                                <li class="des text-center">Si eres un nuevo usuario</li>
                                 <li class="text-center">
                                     <a href="Home/RegisterUser">Registrate</a>
+
                                 </li>
                                 <li>
-                                    <button class="btn" type="button" onclick="location.href='login_register.html'">Login</button>
+                                    <button id="btnLogin" class="btn" type="button">Login</button>
                                 </li>
                             </ul>
                         </li>
@@ -141,6 +155,18 @@
     <script src="@Url.Content("~/Template/js/owl-carousel/owl.carousel.min.js")"></script>
     <!-- Utilities -->
     <script type="text/javascript" src="@Url.Content("~/js/Controller/Utilities.js")"></script>
+
+
+    <script>
+        var routes = {
+            Login: '@Url.Action("Login", "Home")'
+        };
+
+    </script>
+
+    <script type="text/javascript" src="@Url.Content("~/js/Model/GlobalModel.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/View/GlobalView.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/Controller/GlobalController.js")"></script>
 
     @RenderSection("JS", false)
 

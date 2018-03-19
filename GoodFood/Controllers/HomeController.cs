@@ -45,9 +45,28 @@ namespace GoodFood.Controllers
 
             try
             {
-                UserModel a = JsonConvert.DeserializeObject<UserModel>(pUser);
+                UserModel user = JsonConvert.DeserializeObject<UserModel>(pUser);
 
-                ans = UserModel.SaveUser(a);
+                ans = UserModel.SaveUser(user);
+            }
+            catch (Exception ex)
+            {
+                Error();
+            }
+
+            return JsonConvert.SerializeObject(ans);
+        }
+
+        public string Login(string pUser)
+        {
+
+            Response ans = null;
+
+            try
+            {
+                UserModel user = JsonConvert.DeserializeObject<UserModel>(pUser);
+
+                ans = UserModel.Login(user);
             }
             catch (Exception ex)
             {
