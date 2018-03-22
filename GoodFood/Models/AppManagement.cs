@@ -9,8 +9,11 @@ namespace GoodFood.Models
     {
         public const string connStr = "server=localhost;user=root;database=goodfooddb;port=3306;password=creativecalo10";
 
-        //MySQL Store Procedures
+        //MySQL Home Store Procedures
         public const string SP_SaveUser = "SP_SaveUser";
+
+        //MySQL Client Store Procedures
+        public const string SP_GetAllClients = "SP_GetAllClients";
 
         //MySQL Functions
         public const string FN_Login = "FN_Login";

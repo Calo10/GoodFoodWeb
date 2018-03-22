@@ -9,6 +9,7 @@ namespace GoodFood.Models
 {
     public class UserModel 
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string FirstLastName { get; set; }
         public string SecondLastName { get; set; }
@@ -89,5 +90,46 @@ namespace GoodFood.Models
             }
 
         }
+
+        public static ResponseGetAllClients GetAllClients()
+        {
+
+            MySqlConnection conn = new MySqlConnection(AppManagement.connStr);
+            List<UserModel> lstClients = new List<UserModel>();
+
+            try
+            {
+                conn.Open();
+
+                string SP = AppManagement.SP_GetAllClients;
+                MySqlCommand cmd = new MySqlCommand(SP, conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    UserModel user = new UserModel();
+
+                    user.Id = Convert.ToInt32(rdr["id"]);
+                    user.Name = rdr["Name"].ToString();
+                    user.FirstLastName = rdr["FirstLastName"].ToString();
+                    user.SecondLastName = rdr["SecondLastName"].ToString();
+                    user.Email = rdr["Email"].ToString();
+
+                    lstClients.Add(user);
+                }
+                
+                rdr.Close();
+
+                return new ResponseGetAllClients { IsSuccessful = true, ResponseMessage = "Carga de Clientes Finalizada" , lstClients = lstClients};
+            }
+            catch (Exception ex)
+            {
+                return new ResponseGetAllClients { IsSuccessful = false, ResponseMessage = ex.Message.ToString(), lstClients = null };
+            }
+
+        }
+
     }
 }

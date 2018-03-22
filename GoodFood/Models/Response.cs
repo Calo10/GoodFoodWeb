@@ -14,4 +14,9 @@ namespace GoodFood.Models
 
         public int AffectedID { get; set; }
     }
+
+    public class ResponseGetAllClients : Response
+    {
+        public List<UserModel> lstClients { get; set; }
+    }
 }

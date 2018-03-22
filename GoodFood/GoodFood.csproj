@@ -216,6 +216,8 @@
   <ItemGroup>
     <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="wwwroot\AdminTemplate\" />
+    <Folder Include="wwwroot\lib\bootstrap-table\css\" />
+    <Folder Include="wwwroot\lib\bootstrap-table\js\" />
   </ItemGroup>
 
 </Project>
