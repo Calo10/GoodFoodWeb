@@ -15,6 +15,9 @@ namespace GoodFood.Models
         //MySQL Client Store Procedures
         public const string SP_GetAllClients = "SP_GetAllClients";
 
+        //MySQL Product Store Procedures
+        public const string SP_SaveProduct = "SP_SaveProduct";
+
         //MySQL Functions
         public const string FN_Login = "FN_Login";
 
@@ -24,5 +27,7 @@ namespace GoodFood.Models
         public const string MSG_SaveUser_Failure = "Error en la creacion del Usuario";
         public const string MSG_LoginUser_Success = "Usuario logueado Exitosamente!";
         public const string MSG_LoginUser_Failure = "Verifique sus credenciales";
+        public const string MSG_SaveProduct_Success = "Producto Creado Exitosamente!";
+        public const string MSG_SaveProduct_Failure = "Error en la creacion del Producto";
     }
 }
