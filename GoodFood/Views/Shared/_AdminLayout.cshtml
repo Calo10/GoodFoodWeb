@@ -297,7 +297,7 @@
                                         <span>Dashboard</span>
                                     </a>
                                 </li>
-                                <!-- Clients -->
+                                <!-- Clientes -->
                                 <li class="nav-parent nav-expanded nav-active">
                                     <a class="nav-link" href="#">
                                         <i class="fa fa-columns" aria-hidden="true"></i>
@@ -305,7 +305,7 @@
                                     </a>
                                     <ul class="nav nav-children">
                                         <li>
-                                            <a class="nav-link" href="Client/Index">
+                                            <a class="nav-link" href="@Url.Action("Index", "Client")">
                                                 Lista de Clientes
                                             </a>
                                         </li>
@@ -313,7 +313,7 @@
                                 </li>
                                 <!-- Usuarios -->
                                 <li class="nav-parent">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link">
                                         <i class="fa fa-copy" aria-hidden="true"></i>
                                         <span>Usuarios</span>
                                     </a>
@@ -327,14 +327,28 @@
                                 </li>
                                 <!-- Productos -->
                                 <li class="nav-parent">
-                                    <a class="nav-link" href="Product/Index">
+                                    <a class="nav-link">
                                         <i class="fa fa-tasks" aria-hidden="true"></i>
                                         <span>Productos</span>
                                     </a>
                                     <ul class="nav nav-children">
                                         <li>
-                                            <a class="nav-link" href="ui-elements-typography.html">
+                                            <a class="nav-link" href="@Url.Action("Index", "Product")">
                                                 Lista de Productos
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Pedidos -->
+                                <li class="nav-parent">
+                                    <a class="nav-link">
+                                        <i class="fa fa-tasks" aria-hidden="true"></i>
+                                        <span>Pedidos</span>
+                                    </a>
+                                    <ul class="nav nav-children">
+                                        <li>
+                                            <a class="nav-link" href="@Url.Action("Index", "Product")">
+                                                Lista de Pedidos
                                             </a>
                                         </li>
                                     </ul>

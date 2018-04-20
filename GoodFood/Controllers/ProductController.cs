@@ -15,6 +15,7 @@ namespace GoodFood.Controllers
         {
             return View();
         }
+
         public string SaveProduct(string pProduct)
         {
 
@@ -25,6 +26,42 @@ namespace GoodFood.Controllers
                 ProductModel product = JsonConvert.DeserializeObject<ProductModel>(pProduct);
 
                 ans = ProductModel.SaveProduct(product);
+            }
+            catch (Exception ex)
+            {
+                Error();
+            }
+
+            return JsonConvert.SerializeObject(ans);
+        }
+
+        public string getAllProducts()
+        {
+
+            ResponseGetAllProducts ans = null;
+
+            try
+            {
+
+                ans = ProductModel.GetAllProducts();
+            }
+            catch (Exception ex)
+            {
+                Error();
+            }
+
+            return JsonConvert.SerializeObject(ans);
+        }
+
+        public string getAllProductsForShop()
+        {
+
+            ResponseGetAllProducts ans = null;
+
+            try
+            {
+
+                ans = ProductModel.GetAllProductsForShop();
             }
             catch (Exception ex)
             {

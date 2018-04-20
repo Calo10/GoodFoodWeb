@@ -17,6 +17,8 @@ namespace GoodFood.Models
 
         //MySQL Product Store Procedures
         public const string SP_SaveProduct = "SP_SaveProduct";
+        public const string SP_GetAllProducts = "SP_GetAllProducts";
+        public const string SP_GetAllProductsForShop = "SP_GetAllProductsForShop";
 
         //MySQL Functions
         public const string FN_Login = "FN_Login";

@@ -15,8 +15,19 @@ namespace GoodFood.Models
         public int AffectedID { get; set; }
     }
 
+    #region Clients
     public class ResponseGetAllClients : Response
     {
         public List<UserModel> lstClients { get; set; }
     }
+    #endregion
+
+    #region Products
+
+    public class ResponseGetAllProducts : Response
+    {
+        public List<ProductModel> lstProducts { get; set; }
+    }
+
+    #endregion
 }

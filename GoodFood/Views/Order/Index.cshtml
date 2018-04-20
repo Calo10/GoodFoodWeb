@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+@section CSS {
+
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href=@Url.Content("~/AdminTemplate/vendor/select2/css/select2.css") />
+    <link rel="stylesheet" href=@Url.Content("~/AdminTemplate/vendor/select2-bootstrap-theme/select2-bootstrap.min.css") />
+    <link rel="stylesheet" href=@Url.Content("~/AdminTemplate/vendor//pnotify/pnotify.custom.css") />
+
+}
+<div class="col-xl-12">
+    <section class="card">
+        <header class="card-header card-header-transparent">
+            <div class="card-actions">
+                <a href="#" class="card-action card-action-toggle" data-card-toggle=""></a>
+                <a href="#" class="card-action card-action-dismiss" data-card-dismiss=""></a>
+            </div>
+
+            <h2 class="card-title">Lista de Ordenes</h2>
+        </header>
+        <div class="card-body">
+            <div class="col-md-12">
+                <div class="input-group input-search col-md-12">
+                    <input type="text" class="form-control" name="q" id="q" placeholder="Buscar...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+                <div class="col-md-12">
+                    <button data-toggle="modal" type="button" class="mb-1 mt-1 mr-1 pull-right modal-with-form  btn btn-success" href="#modalNewProduct">Nuevo</button>
+                </div>
+            </div>
+            <!-- Order Table -->
+            <table id="tblOrders" class="table table-responsive-md table-striped mb-0" />
+        </div>
+    </section>
+</div>
+
+<!-- Modal New Product -->
+<div id="modalNewProduct" class="modal fade">
+    <section class="card">
+        <header class="card-header">
+            <h2 class="card-title">Ingresar Nueva</h2>
+        </header>
+        <div class="card-body">
+
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="txtProductName">Nombre</label>
+                    <input id="txtProductName" type="text" class="form-control" placeholder="Nombre de Producto">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="txtProductDescription">Descripcion</label>
+                    <input id="txtProductDescription" type="text" class="form-control" placeholder="Descipcion de Producto">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="txtProductUniPrice">Precio</label>
+                    <input id="txtProductUniPrice" type="number" class="form-control" placeholder="Precio Unitario">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="idProductType">Tipo</label>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            -- Selecionar Tipo --
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="idIsActive">Activo</label>
+                    <input id="idIsActive" class="form-control" type="checkbox" checked data-toggle="toggle" data-size="mini">
+                </div>
+            </div>
+
+        </div>
+        <footer class="card-footer">
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <button id="btnSaveProduct" class="btn btn-primary modal-confirm">Guardar</button>
+                    <button class="btn btn-default modal-dismiss">Cancelar</button>
+                </div>
+            </div>
+        </footer>
+    </section>
+</div>
+
+
+@section JS{
+
+    <script>
+        var routes = {
+            getAllProducts: '@Url.Action("getAllProducts", "Product")',
+            SaveProduct: '@Url.Action("SaveProduct", "Product")'
+        };
+
+    </script>
+
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <script src="@Url.Content("~/AdminTemplate/vendor/select2/js/select2.js")"></script>
+    <script src="@Url.Content("~/AdminTemplate/vendor/pnotify/pnotify.custom.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/js/Model/OrderModel.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/View/OrderView.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/Controller/OrderController.js")"></script>
+
+}
