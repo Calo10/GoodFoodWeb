@@ -1487,25 +1487,25 @@ footer .powered li{
 } 
 .header2 .product-thumb{
 	border:2px solid #F7F6F2;
-	border-radius:0;
+	border-radius:10px;
 }
-.header2 .product-thumb:hover{
+/*.header2 .product-thumb:hover{
 	box-shadow: none;
 }
 .header2 .product-thumb:hover .image{
 	margin:0;
 	background:#fff;
-}
+}*/
 .header2 .product-thumb .image{
-	background:#F7F6F2;
-	border-radius:0;
-}
-.header2 .product-thumb:hover .image a {
+	background:#F3F3F3;
+	border-radius:10px;
+}.header2 .product-thumb
+/*.header2 .product-thumb:hover .image a {
 	opacity:100;
 }
 .header2 .product-thumb:hover .caption{
     display: none;
-}
+}*/
 .header2 .product-thumb:hover .button-group{
     display: block;
 }

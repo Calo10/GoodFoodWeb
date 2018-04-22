@@ -24,25 +24,14 @@
                     '<div class="product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12"> ' +
                     '    <div class="product-thumb"> ' +
                     '        <div class="image"> ' +
-                    '            <a href="*"><img src="http://ocsolutions.co.in/html/organic_food/images/product/1.png" alt="image" title="image" class="img-responsive" /></a> ' +
-                    '            <div class="onhover onhover1"> ' +
-                    '                <ul class="list-unstyled"> ' +
-                    '                    <li> ' +
-                    '                        <button type="button"><i class="icon_cart"></i></button> ' +
-                    '                    </li> ' +
-                    '                    <li> ' +
-                    '                        <button type="button"><i class="icon_heart"></i></button> ' +
-                    '                    </li> ' +
-                    '                    <li> ' +
-                    '                        <button type="button"><i class="icon_piechart"></i></button> ' +
-                    '                    </li> ' +
-                    '                </ul> ' +
-                    '                <button class="icons1" type="button"><i class="fa fa-bars"></i></button> ' +
+                    '            <a><img src="http://ocsolutions.co.in/html/organic_food/images/product/1.png" alt="image" title="image" class="img-responsive" /></a> ' +
+                    '            <div id="' + lstProducts[i].Id.toString() + '" class="productMenuDisplay onhover onhover1"> ' +
+                    '                <button id="' + lstProducts[i].Id.toString() + '" class="productMenuDisplay icons1" type="button"><i class="icon_cart"></i></button> ' +
                     '            </div> ' +
                     '        </div> ' +
                     '        <div class="caption"> ' +
                     '            <h4><a href="shopdetail.html">' + lstProducts[i].Name + '</a></h4> ' +
-                    '            <p class="price">' + lstProducts[i].Price +  '</p> ' +
+                    '            <p class="price">' + lstProducts[i].UnitPrice.toString() +  '</p> ' +
                     '            <div class="rating"> ' +
                     '                <i class="icon_star"></i> ' +
                     '                <i class="icon_star"></i> ' +
@@ -65,6 +54,17 @@
 
 
                 jq.find('#cntProducts').append(ProductsHTML);
+
+
+                //jq2 =
+                //    '<script>' +
+                //    '$(".productMenuDisplay").click(function () {' +
+                //    '   alert((this).id);' +
+                //    '});' +
+                //    '</script>';
+
+                //jq.find('#cntProducts').append(jq2);
+
 
             } catch (e) {
 

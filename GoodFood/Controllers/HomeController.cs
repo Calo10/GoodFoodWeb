@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using GoodFood.Models;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
 
 namespace GoodFood.Controllers
 {
@@ -67,6 +68,9 @@ namespace GoodFood.Controllers
                 UserModel user = JsonConvert.DeserializeObject<UserModel>(pUser);
 
                 ans = UserModel.Login(user);
+
+                if (ans.IsSuccessful)
+                    HttpContext.Session.SetString("UserId", ans.AffectedID.ToString());
             }
             catch (Exception ex)
             {

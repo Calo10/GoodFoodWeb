@@ -15,9 +15,15 @@
 
             var Utilities = modulejs.require('Utilities');
             this.utilities = new Utilities();
+            
+            this.GlobalCart = sessionStorage.getItem("GlobalCart") == null ? [] : JSON.parse(sessionStorage.getItem("GlobalCart"));
 
         };
 
+        GlobalController.prototype.Init = function () {
+
+            this.View.SetItemToGlobalCart(this.GlobalCart);
+        };
 
         GlobalController.prototype.Login = function (user) {
 
@@ -34,6 +40,22 @@
 
         };
 
+        GlobalController.prototype.AddItemToGlobalCart = function (item) {
+
+            try {
+                
+                this.GlobalCart.push(item);
+
+                this.View.SetItemToGlobalCart(this.GlobalCart);
+
+                sessionStorage.setItem('GlobalCart', JSON.stringify(this.GlobalCart));
+
+
+            } catch (e) {
+
+            }
+        };
+
 
         return GlobalController;
     });
@@ -45,6 +67,12 @@
     
 
     // EVENTS
+    jq.ready(function () {
+
+        globalController.Init();
+
+    });
+
     jq.on('click', '#btnLogin', function (e) {
 
         e.preventDefault();

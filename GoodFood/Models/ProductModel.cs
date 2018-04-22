@@ -13,7 +13,7 @@ namespace GoodFood.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public double UniPrice { get; set; }
+        public double UnitPrice { get; set; }
         public bool Status { get; set; }
         public int idProductType { get; set; }
 
@@ -32,7 +32,7 @@ namespace GoodFood.Models
 
                 cmd.Parameters.AddWithValue("@Name", product.Name);
                 cmd.Parameters.AddWithValue("@Description", product.Description);
-                cmd.Parameters.AddWithValue("@UnitPrice", product.UniPrice);
+                cmd.Parameters.AddWithValue("@UnitPrice", product.UnitPrice);
                 cmd.Parameters.AddWithValue("@Status", product.Status);
                 cmd.Parameters.AddWithValue("@idProductType", product.idProductType);
 
@@ -79,7 +79,7 @@ namespace GoodFood.Models
                     product.Id = Convert.ToInt32(rdr["id"]);
                     product.Name = rdr["Name"].ToString();
                     product.Description = rdr["Description"].ToString();
-                    product.UniPrice = Convert.ToDouble(rdr["UnitPrice"]);
+                    product.UnitPrice = Convert.ToDouble(rdr["UnitPrice"]);
                     product.Status = Convert.ToBoolean(rdr["Status"]);
                     product.idProductType = Convert.ToInt32(rdr["idProductType"]);
 
@@ -119,7 +119,7 @@ namespace GoodFood.Models
                     product.Id = Convert.ToInt32(rdr["id"]);
                     product.Name = rdr["Name"].ToString();
                     product.Description = rdr["Description"].ToString();
-                    product.UniPrice = Convert.ToDouble(rdr["UnitPrice"]);
+                    product.UnitPrice = Convert.ToDouble(rdr["UnitPrice"]);
                     product.Status = Convert.ToBoolean(rdr["Status"]);
                     product.idProductType = Convert.ToInt32(rdr["idProductType"]);
 

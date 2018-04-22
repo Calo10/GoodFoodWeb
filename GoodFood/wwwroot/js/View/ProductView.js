@@ -48,20 +48,20 @@
                         valign: 'middle',
                         sortable: true
                     }, {
-                        field: 'FirstLastName',
-                        title: 'Apellido',
+                        field: 'Description',
+                        title: 'Descripcion',
                         align: 'left',
                         valign: 'middle',
                         sortable: true
                     }, {
-                        field: 'SecondLastName',
-                        title: 'Apellido',
+                        field: 'UnitPrice',
+                        title: 'Precio',
                         align: 'left',
                         valign: 'middle',
                         sortable: true
                     }, {
-                        field: 'Email',
-                        title: 'Email',
+                        field: 'Status',
+                        title: 'Status',
                         align: 'left',
                         valign: 'middle',
                         sortable: true

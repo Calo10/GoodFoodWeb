@@ -13,6 +13,9 @@
             var ShopView = modulejs.require('ShopView');
             this.View = new ShopView();
 
+            var GlobalController = modulejs.require('GlobalController');
+            this.GlobalController = new GlobalController();
+
             var Utilities = modulejs.require('Utilities');
             this.utilities = new Utilities();
 
@@ -54,6 +57,24 @@
             }
 
         };
+
+        ShopController.prototype.AddToCart = function (id) {
+
+            try {
+                var actualItem;
+
+                this.lstProducts.forEach(function (element) {
+
+                    if (element.Id == id)
+                        actualItem = element;
+                });
+
+                this.GlobalController.AddItemToGlobalCart(actualItem);
+
+            } catch (e) {
+
+            }
+        };
         
 
         return ShopController;
@@ -64,6 +85,9 @@
     var ShopController = modulejs.require('ShopController');
     var shopController = new ShopController();
 
+    var GlobalController = modulejs.require('GlobalController');
+    var globalController = new GlobalController();
+
 
     // EVENTS
     jq.ready(function () {
@@ -72,5 +96,12 @@
 
     });
 
+    jq.on('click', '#cntProducts .product-thumb .image .productMenuDisplay', function (e) {
+ 
+        shopController.AddToCart((this).id);
+    });
+
+  
+    
 
 })();

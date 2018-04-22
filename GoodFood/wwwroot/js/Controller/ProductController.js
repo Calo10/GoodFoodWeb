@@ -61,6 +61,8 @@
                 ans = JSON.parse(ans);
 
                 alert(ans.ResponseMessage);
+                $('#modalNewProduct').modal('hide');
+                this.FillProducts();
 
             } catch (e) {
                 manageError(e);
@@ -92,7 +94,7 @@
             var Product = {
                 Name: jq.find('#txtProductName').val(),
                 Description: jq.find('#txtProductDescription').val(),
-                UnitPrice: jq.find('#txtProductUniPrice').val(),
+                UnitPrice: jq.find('#txtProductUnitPrice').val(),
                 Status: true,
                 idProductType: 1
             }
