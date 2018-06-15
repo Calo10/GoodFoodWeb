@@ -9,7 +9,7 @@
         GlobalModel.prototype.Login = function (user) {
 
             try {
-
+                debugger;
                 var data = new FormData();
 
                 var user = JSON.stringify(user);
@@ -18,7 +18,7 @@
                 var ans = '';
 
                 $.ajax({
-                    url: routes.Login,
+                    url: globalRoutes.Login,
                     type: 'POST',
                     traditional: true,
                     async: false,

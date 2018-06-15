@@ -2,10 +2,17 @@ C:\Projects\GoodFood\GoodFood
 --output-path=obj\Release\netcoreapp2.0\
 --application-name=GoodFood
 --content-root=C:\Projects\GoodFood\GoodFood
+--file=C:\Projects\GoodFood\GoodFood\Views\AdminHome\Index.cshtml
+--file=C:\Projects\GoodFood\GoodFood\Views\Client\Index.cshtml
 --file=C:\Projects\GoodFood\GoodFood\Views\Home\Index.cshtml
 --file=C:\Projects\GoodFood\GoodFood\Views\Home\RegisterUser.cshtml
+--file=C:\Projects\GoodFood\GoodFood\Views\Order\Index.cshtml
+--file=C:\Projects\GoodFood\GoodFood\Views\Product\Index.cshtml
 --file=C:\Projects\GoodFood\GoodFood\Views\Shared\Error.cshtml
+--file=C:\Projects\GoodFood\GoodFood\Views\Shared\_AdminLayout.cshtml
 --file=C:\Projects\GoodFood\GoodFood\Views\Shared\_Layout.cshtml
 --file=C:\Projects\GoodFood\GoodFood\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Projects\GoodFood\GoodFood\Views\Shop\Index.cshtml
+--file=C:\Projects\GoodFood\GoodFood\Views\Shop\ShoppingCart.cshtml
 --file=C:\Projects\GoodFood\GoodFood\Views\_ViewImports.cshtml
 --file=C:\Projects\GoodFood\GoodFood\Views\_ViewStart.cshtml

@@ -3,7 +3,6 @@ C:\Projects\GoodFood\GoodFood\bin\Debug\netcoreapp2.0\GoodFood.runtimeconfig.jso
 C:\Projects\GoodFood\GoodFood\bin\Debug\netcoreapp2.0\GoodFood.runtimeconfig.dev.json
 C:\Projects\GoodFood\GoodFood\bin\Debug\netcoreapp2.0\GoodFood.dll
 C:\Projects\GoodFood\GoodFood\bin\Debug\netcoreapp2.0\GoodFood.pdb
-C:\Projects\GoodFood\GoodFood\obj\Debug\netcoreapp2.0\GoodFood.csprojResolveAssemblyReference.cache
 C:\Projects\GoodFood\GoodFood\obj\Debug\netcoreapp2.0\GoodFood.csproj.CoreCompileInputs.cache
 C:\Projects\GoodFood\GoodFood\obj\Debug\netcoreapp2.0\GoodFood.AssemblyInfoInputs.cache
 C:\Projects\GoodFood\GoodFood\obj\Debug\netcoreapp2.0\GoodFood.AssemblyInfo.cs

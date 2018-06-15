@@ -56,6 +56,16 @@
             }
         };
 
+        GlobalController.prototype.GetCartList = function () {
+
+            try {
+
+                return this.GlobalCart;
+
+            } catch (e) {
+
+            }
+        };
 
         return GlobalController;
     });
@@ -85,5 +95,18 @@
         globalController.Login(User);
 
     });
+
+    jq.on('click', '#btnViewCartMain', function (e) {
+
+        e.preventDefault();
+        window.location.href = globalRoutes.GoToCart;
+    });
+
+    jq.on('click', '#btnContinueShopping', function (e) {
+        e.preventDefault();
+        window.location.href = routes.GoToShop;
+    });
+
+    
 
 })();

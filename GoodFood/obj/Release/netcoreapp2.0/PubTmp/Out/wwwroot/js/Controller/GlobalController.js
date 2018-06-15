@@ -15,9 +15,15 @@
 
             var Utilities = modulejs.require('Utilities');
             this.utilities = new Utilities();
+            
+            this.GlobalCart = sessionStorage.getItem("GlobalCart") == null ? [] : JSON.parse(sessionStorage.getItem("GlobalCart"));
 
         };
 
+        GlobalController.prototype.Init = function () {
+
+            this.View.SetItemToGlobalCart(this.GlobalCart);
+        };
 
         GlobalController.prototype.Login = function (user) {
 
@@ -34,6 +40,32 @@
 
         };
 
+        GlobalController.prototype.AddItemToGlobalCart = function (item) {
+
+            try {
+                
+                this.GlobalCart.push(item);
+
+                this.View.SetItemToGlobalCart(this.GlobalCart);
+
+                sessionStorage.setItem('GlobalCart', JSON.stringify(this.GlobalCart));
+
+
+            } catch (e) {
+
+            }
+        };
+
+        GlobalController.prototype.GetCartList = function () {
+
+            try {
+
+                return this.GlobalCart;
+
+            } catch (e) {
+
+            }
+        };
 
         return GlobalController;
     });
@@ -45,6 +77,12 @@
     
 
     // EVENTS
+    jq.ready(function () {
+
+        globalController.Init();
+
+    });
+
     jq.on('click', '#btnLogin', function (e) {
 
         e.preventDefault();
@@ -57,5 +95,18 @@
         globalController.Login(User);
 
     });
+
+    jq.on('click', '#btnViewCartMain', function (e) {
+
+        e.preventDefault();
+        window.location.href = globalRoutes.GoToCart;
+    });
+
+    jq.on('click', '#btnContinueShopping', function (e) {
+        e.preventDefault();
+        window.location.href = routes.GoToShop;
+    });
+
+    
 
 })();

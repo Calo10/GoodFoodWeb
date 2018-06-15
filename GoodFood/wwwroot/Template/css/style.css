@@ -1734,7 +1734,7 @@ footer .powered li{
     margin:0;
 }
 .header2 footer, .header2 footer .powered {
-    background: #b9e5fb;
+    /*background: #b9e5fb;*/
 }
 .header2 footer h5{
 	margin:25px 0 0;

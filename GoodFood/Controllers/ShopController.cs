@@ -12,5 +12,10 @@ namespace GoodFood.Controllers
         {
             return View();
         }
+
+        public IActionResult ShoppingCart()
+        {
+            return View();
+        }
     }
 }

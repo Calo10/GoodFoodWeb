@@ -33,4 +33,99 @@
     padding-left: 0px;
 }
 
+.CenterMainLogo {
+    width: 200px;
+    height: 163px !important;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 15% 0 0 -9%;
+    z-index: 2;
+}
+
+.owl-buttons {
+    display: none !important;
+}
+
+.MainLabelIndicators {
+    transform: rotate(-90deg);
+    font-size: small;
+    margin-left: -10px;
+    margin-top: 10%;
+    position: absolute;
+    letter-spacing: .2rem;
+}
+
+.Separator {
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+
+
+
+.border {
+    position: fixed;
+    background: #1a1a1a;
+    z-index: 102;
+    backface-visibility: hidden;
+}
+
+.border.horizontal {
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+    height: 3rem;
+    background: #1a1a1a;
+    margin-top: 0;
+}
+
+.border.top {
+    top: 0;
+}
+
+.border.left {
+    left:0;
+}
+
+.border.right {
+    right:0;
+}
+
+.border.vertical {
+    top: 0;
+    bottom: 0;
+    width: 3rem;
+    height: 100%;
+}
+
+.CenterText {
+    font: 400 2rem/1.75rem 'Crimson Text',serif;
+    color: #898989;
+    text-align: justify;
+    line-height: 35px;
+}
+
+.TestimonialImage {
+    border-radius: 50%;
+}
+
+.NextGroupsContainer {
+    background-image: url('../images/group_background.jpg');
+}
+
+.GroupBox {
+    background-color: rgba(255,255,255,0.78) !important;
+    border-radius: 20px !important;
+    padding: 25px;
+}
+
+footer {
+    background-image: url(http://velvethammer.net/wp-content/themes/sa/images/footer-bg.jpg);
+}
+
+
+
 
