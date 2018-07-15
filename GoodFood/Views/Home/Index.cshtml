@@ -6,7 +6,12 @@
 <!-- slider start here -->
 <div>
     <div style="position: relative;">
-        <img id="HeaderLogo" class="img-responsive CenterMainLogo" src="@Url.Content("~/images/white_logo.png")" />
+        <div id="sliderContainer" class="CenterMainLogo">
+            <label class="sliderText1">ESTO NO ES UNA DIETA</label>
+            <label class="sliderText2">ESTO ES COMER BIEN</label>
+            <button class="CenterMainButton" value="sdasdas">Reservá tu espacio</button>
+        </div>
+        @*<img id="HeaderLogo" class="img-responsive CenterMainLogo" src="@Url.Content("~/images/white_logo.png")" />*@
     </div>
     <div class="slide">
 
@@ -24,21 +29,105 @@
     </div>
 </div>
 <!--  -->
-<!--Information Block -->
+<!--Planes Block -->
 <div>
-    <label class="MainLabelIndicators">Información</label>
-    <div class="container" style="padding:50px;">
-        <img class="img-responsive Separator" src="@Url.Content("~/images/separadorgf.png")" />
+    @*<label class="MainLabelIndicators">Información</label>*@
+    <div class="" style="padding:50px;">
+        @*<img class="img-responsive Separator" src="@Url.Content("~/images/separadorgf.png")" />*@
         <div class="row">
-            <div class="col-sm-12 col-xs-12">
-                <div class="" style="width:100%;">
-                    <div>
-                        <p class="CenterText">
-                            "Cuidadosamente escogemos los más frescos ingredientes para prepararte alimentos sanos y
-                            balanceados que te ayuden a promover la eliminación de toxinas durante 21 días. Cada día, te
-                            cocinamos tu comida y te la llevamos a tu casa u oficina para que podás obtener los beneficios
-                            de una desintoxicación, sin interferir con tu día a día."
-                        </p>
+            <div class="col-md-12 col-xs-12" style="text-align: center; font-size: xx-large;">
+                <label>NUESTROS PLANES</label>
+            </div>
+            <div class="col-md-4" style="background-color: #e58e56; text-align: center; padding: 50px; height: 580px;">
+                <label style="font-size: 70px;">21 DIAS</label><br />
+                <label>programa completo</label>
+                <p style="font-weight: bold;">
+                    Limpia tu cuerpo.<br />
+                    Elmina la mayor cantidad de toxinas y<br />
+                    logra cambiar habitos para estar mejor cada dia.<br />
+                    21 dias de comer delicioso para darle un<br />
+                    descanso a tu cuerpo y reconectar con tu bienestar.<br /><br />
+
+                    Todastus comidas en la puerta de tu casa u oficina.<br />
+                    Charlas cada semana<br />
+                    Yoga ilimitado.<br />
+                    Descuentos especiales.<br />
+                    Y muchos beneficios mas.<br /><br />
+
+                    Cupo limitado
+                </p>
+                <button class="CenterMainButton" style="width: 300px; margin-bottom: 25px;">Más Info</button>
+            </div>
+            <div class="col-md-4" style="background-color: #d9ca6b; text-align: center; padding: 50px; height: 580px;">
+                <label style="font-size: 70px;">SEMANAS</label><br />
+                <label>programa completo</label>
+                <p style="font-weight: bold;">
+                    Segui comiendo bien todos los dias<br />
+                    con nuestros paquetes semanales<br /><br />
+
+                    Desde nuestros combos de batido y sopa,<br />
+                    hasta las tres comidas completas a domicilio.<br />
+                    De lunes a viernes o la semana completa.<br /><br />
+
+                    No hay excusas para no chinearte.<br />
+                    Nosotros te lo hacemos facil.<br />
+                </p>
+                <button class="CenterMainButton" style="width: 300px; margin-bottom: 25px;">Más Info</button>
+            </div>
+            <div class="col-md-4" style="background-color: #c195ab; text-align: center; padding: 50px; height: 580px;">
+                <label style="font-size: 70px;">SNACKS</label><br />
+                <label>programa completo</label>
+                <p style="font-weight: bold;">
+                    Empeza a hacer los cambios pequeños<br />
+                    en tu alimentacion con nuestros snacks<br />
+                    o complementa lo que ya estes haciendo<br />
+                    con mejores opciones para picar a lo largo del dialog<br /><br />
+
+                    Pedi nuestros paquetes de snacks a domicilio<br />
+                    a travez de nuestro menu en linea<br />
+                </p>
+                <button class="CenterMainButton" style="width: 300px; margin-bottom: 25px;">Más Info</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
+<!--Info Block -->
+<div>
+    @*<label class="MainLabelIndicators">Menu</label>*@
+    <div class="" style="padding:50px;">
+        @*<img class="img-responsive Separator" src="@Url.Content("~/images/separadorgf.png")" />*@
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+
+                <img class="img-responsive Separator" src="@Url.Content("~/images/plate.png")" style="margin-left: -50px;" />
+
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <label style="font-size: 50px;">SIN GLUTEN. SIN PRESERVANTES. SIN LACTEOS</label><br />
+                <p style="font-weight: bold; font-size: 35px;">
+                    Trabajamos con producto local de primera calidad, en su mayoria organico, y libre de cosas que normalmente irriran o producen alergias.
+                </p>
+                <button class="CenterMainButton pull-right" style="width: 300px; margin-bottom: 25px;">¡Quiero más Info!</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
+<!--Testimonials Block -->
+<div class="">
+    @*<label class="MainLabelIndicators">Proximos Grupos</label>*@
+    <div class="">
+        @*<img class="img-responsive Separator" src="@Url.Content("~/images/separadorgf.png")" />*@
+        <div class=" NextGroupsContainer" style="height:500px;">
+            <div class="col-sm-12 col-xs-12" style="margin-top: 100px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p style="color: #020202; font-size: 37px; margin-top: 81px; text-align: center;">
+                                "Empecé el programa porque poco a poco había ido adquiriendo malos hábitos de alimentación y me sentía realmente cansada y muuuuuy pesada. Lee mas"
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,21 +135,38 @@
     </div>
 </div>
 <!--  -->
-<!--Menu Block -->
-<div>
-    <label class="MainLabelIndicators">Menu</label>
-    <div class="container" style="padding:50px;">
-        <img class="img-responsive Separator" src="@Url.Content("~/images/separadorgf.png")" />
-        <div class="row">
-            <div class="col-sm-12 col-xs-12">
-
-             
-
+<!--Next Groups Block -->
+<div class="">
+    @*<label class="MainLabelIndicators">Proximos Grupos</label>*@
+    <div class="">
+        @*<img class="img-responsive Separator" src="@Url.Content("~/images/separadorgf.png")" />*@
+        <div class=" " style="height:500px;">
+            <div class="col-sm-12 col-xs-12" style="margin-top: 100px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12" style="text-align: center;">
+                            <label style="font-size: 50px;">EJEMPLOS DE MENU</label><br />
+                            <p style="font-weight: bold; font-size: 30px; text-align: center;">
+                                Comer bien no significa contar calorias, comer polvos raros o solo tomas jugos.<br />
+                                Se trata de comer cosas buena sy ricas que te hagan sentir mejor cada dia!<br />
+                                Preparamos todas tus comidas con ingredientes frescos y de temporada.<br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive Separator" src="@Url.Content("~/images/menu1.png")" />
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive Separator" src="@Url.Content("~/images/menu2.png")" />
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive Separator" src="@Url.Content("~/images/menu3.png")" />
             </div>
         </div>
     </div>
 </div>
-<!--  -->
 <!--Next Groups Block -->
 <div class="">
     <label class="MainLabelIndicators">Proximos Grupos</label>
@@ -111,34 +217,3 @@
     </div>
 </div>
 <!--  -->
-<!--Testimonial Block -->
-<div>
-    <label class="MainLabelIndicators">Testimonios</label>
-    <div class="container" style="padding:50px;">
-        <img class="img-responsive Separator" src="@Url.Content("~/images/separadorgf.png")" />
-        <div class="row">
-            <div class="col-sm-12 col-xs-12">
-
-                <div class="box text-center">
-                    <ul class="list-inline">
-                        <li>
-                            <img src="https://www.goodfoodcr.com/wp-content/uploads/2017/01/ALBERTO-150x150.jpg" class="img-responsive TestimonialImage" alt="img" title="img" style="width: 100px;">
-                        </li>
-                        <li>
-                            <img src="https://www.goodfoodcr.com/wp-content/uploads/2017/01/mariechen1-150x150.jpg" class="img-responsive TestimonialImage" alt="img" title="img">
-                        </li>
-                        <li>
-                            <img src="https://www.goodfoodcr.com/wp-content/uploads/2017/01/brenna-150x150.jpg" class="img-responsive TestimonialImage" alt="img" title="img" style="width: 100px;">
-                        </li>
-                    </ul>
-                    <p>Siendo semi-vegetariana tiendo a no alimentarme adecuadamente. El programa GoodFood|21 no solo me ha ayudado a sentirme bien, con más energía y mejor ánimo sino que también he aprendido a comer balanceado y delicioso!</p>
-                    <h4><i class="icon_profile"></i> Mariechen Lachner</h4>
-                </div>
-
-
-
-            </div>
-        </div>
-    </div>
-</div>
-<!-- -->

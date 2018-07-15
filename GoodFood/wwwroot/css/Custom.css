@@ -34,14 +34,37 @@
 }
 
 .CenterMainLogo {
-    width: 200px;
     height: 163px !important;
     padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: 15% 0 0 -9%;
+    margin: 15% 0 0 -16%;
     z-index: 2;
+    font-size: 60px !important;
+    display: grid;
+}
+
+.sliderText1 {
+    text-align: center;
+    color: #fff;
+}
+
+.sliderText2 {
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.CenterMainButton {
+    padding: 20px;
+    z-index: 2;
+    font-size: xx-large !important;
+    color: #fff;
+    background-color: #368c84;
+    border-radius: 10px;
+    border: none;
 }
 
 .owl-buttons {
@@ -67,7 +90,7 @@
 
 .border {
     position: fixed;
-    background: #1a1a1a;
+    background: #fff;
     z-index: 102;
     backface-visibility: hidden;
 }
@@ -78,7 +101,7 @@
     width: 100%;
     z-index: 3;
     height: 3rem;
-    background: #1a1a1a;
+    background: #fff;
     margin-top: 0;
 }
 
@@ -103,7 +126,7 @@
 
 .CenterText {
     font: 400 2rem/1.75rem 'Crimson Text',serif;
-    color: #898989;
+    color: #fff;
     text-align: justify;
     line-height: 35px;
 }
