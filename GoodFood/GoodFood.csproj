@@ -219,6 +219,7 @@
     <Folder Include="wwwroot\AdminTemplate\" />
     <Folder Include="wwwroot\lib\bootstrap-table\css\" />
     <Folder Include="wwwroot\lib\bootstrap-table\js\" />
+    <Folder Include="wwwroot\fonts\" />
   </ItemGroup>
 
 </Project>

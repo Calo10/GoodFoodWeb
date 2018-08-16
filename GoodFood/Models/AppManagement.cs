@@ -7,7 +7,8 @@ namespace GoodFood.Models
 {
     public class AppManagement
     {
-        public const string connStr = "server=localhost;user=root;database=goodfooddb;port=3306;password=creativecalo10";
+        //public const string connStr = "server=localhost;user=root;database=goodfooddb;port=3306;password=creativecalo10";
+        public const string connStr = "server=50.62.209.187;user=adminGF;database=dbGoodFood_Dev;port=3306;password=creativecalo10";
 
         //MySQL Home Store Procedures
         public const string SP_SaveUser = "SP_SaveUser";

@@ -1,154 +1,119 @@
-﻿.FacebookButton{
-    width: 100% !important;
+﻿.rowBlock {
+    height: 640px;
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
-#HeaderLogo {
-    height: 84px;
+@font-face {
+    font-family: BrandonGrotesque;
+    src: url("../fonts/BrandonGrotesque-Regular.woff") format("woff"), url("../fonts/BrandonGrotesque-Regular.woff") format("truetype");
 }
 
-#FooterImage{
-
+.BlockLetter {
+    font-family: BrandonGrotesque;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 95px;
 }
 
-.BoxShadow {
-    box-shadow: -1px 0px 26px -6px rgba(0,0,0,0.66);
-    border-radius: 10px;
-    padding-top: 100px !important;
-    padding-right: 70px !important;
-    padding-bottom: 100px !important;
-    padding-left: 70px !important;
-    background-color: #ffffff !important;
+.BlockLetterSecundary {
+    font-family: BrandonGrotesque;
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff;
 }
 
-.bgimg {
-    background-image: url('../images/background_Image_1.png');
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-}
-
-.LoginOption {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-}
-
-.CenterMainLogo {
-    height: 163px !important;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 15% 0 0 -16%;
-    z-index: 2;
-    font-size: 60px !important;
-    display: grid;
-}
-
-.sliderText1 {
-    text-align: center;
-    color: #fff;
-}
-
-.sliderText2 {
-    text-align: center;
-    color: #fff;
-}
-
-
-
-.CenterMainButton {
-    padding: 20px;
-    z-index: 2;
-    font-size: xx-large !important;
-    color: #fff;
-    background-color: #368c84;
-    border-radius: 10px;
+.BlockButton {
     border: none;
-}
-
-.owl-buttons {
-    display: none !important;
-}
-
-.MainLabelIndicators {
-    transform: rotate(-90deg);
-    font-size: small;
-    margin-left: -10px;
-    margin-top: 10%;
-    position: absolute;
-    letter-spacing: .2rem;
-}
-
-.Separator {
-    margin: auto;
-    margin-bottom: 35px;
-}
-
-
-
-
-.border {
-    position: fixed;
-    background: #fff;
-    z-index: 102;
-    backface-visibility: hidden;
-}
-
-.border.horizontal {
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 3;
-    height: 3rem;
-    background: #fff;
-    margin-top: 0;
-}
-
-.border.top {
-    top: 0;
-}
-
-.border.left {
-    left:0;
-}
-
-.border.right {
-    right:0;
-}
-
-.border.vertical {
-    top: 0;
-    bottom: 0;
-    width: 3rem;
-    height: 100%;
-}
-
-.CenterText {
-    font: 400 2rem/1.75rem 'Crimson Text',serif;
+    border-radius: 5px;
     color: #fff;
-    text-align: justify;
-    line-height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin-left: 10px;
 }
 
-.TestimonialImage {
+.BlockLetterThird {
+    font-family: BrandonGrotesque;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 63px;
+    text-align: center;
+}
+
+.BlockLetterFourth {
+    font-family: BrandonGrotesque;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 38px;
+    text-align: center;
+}
+
+#GlutenImage {
+    height: 640px;
+    margin-top: -150px;
+    margin-left: -87px;
+}
+
+.BlockLetterFifth {
+    font-family: BrandonGrotesque;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 63px;
+}
+
+.BlockLetterSixth {
+    font-family: BrandonGrotesque;
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 38px;
+}
+
+.NextGroupCircle {
+    border-bottom-width: 2px;
     border-radius: 50%;
+    border-style: solid;
+    height: 112px;
+    width: 112px;
+    padding-top: 7%;
+    font-size: 25px;
+    margin: auto;s
 }
 
-.NextGroupsContainer {
-    background-image: url('../images/group_background.jpg');
-}
-
-.GroupBox {
-    background-color: rgba(255,255,255,0.78) !important;
-    border-radius: 20px !important;
+.GroupsBox {
     padding: 25px;
 }
 
-footer {
-    background-image: url(http://velvethammer.net/wp-content/themes/sa/images/footer-bg.jpg);
+.GroupsText {
+    font-family: BrandonGrotesque;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 22px;
 }
 
+.SendButton {
+    background-color: white;
+    border-style: none;
+    color: #000;
+    padding: 5px;
+}
 
+.EmailTextBox {
+    background: transparent;
+    border-color: white;
+    border-style: solid;
+    padding: 3px;
+}
 
+footer{
+    background-color:#fff;
+}
 
+.FooterImage {
+    background-image: url('../images/imagen-final.JPG');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

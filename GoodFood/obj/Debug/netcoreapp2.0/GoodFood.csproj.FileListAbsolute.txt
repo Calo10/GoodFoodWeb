@@ -8,3 +8,4 @@ C:\Projects\GoodFood\GoodFood\obj\Debug\netcoreapp2.0\GoodFood.AssemblyInfoInput
 C:\Projects\GoodFood\GoodFood\obj\Debug\netcoreapp2.0\GoodFood.AssemblyInfo.cs
 C:\Projects\GoodFood\GoodFood\obj\Debug\netcoreapp2.0\GoodFood.dll
 C:\Projects\GoodFood\GoodFood\obj\Debug\netcoreapp2.0\GoodFood.pdb
+C:\Projects\GoodFood\GoodFood\obj\Debug\netcoreapp2.0\GoodFood.csprojResolveAssemblyReference.cache

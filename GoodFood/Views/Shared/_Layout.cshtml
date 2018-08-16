@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Header2</title>
+    <title>GoodFood | Limpiá tu cuerpo</title>
     <!-- Bootstrap stylesheet -->
     <link href=@Url.Content("~/Template/bootstrap/css/bootstrap.css") rel="stylesheet">
     <!-- crousel css -->
@@ -47,25 +47,28 @@
                                 <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="btn btn-navbar navbar-toggle" type="button"><i class="fa fa-bars"></i></button>
                             </div>
                             <div class="collapse navbar-collapse navbar-ex1-collapse padd0">
-                                <ul class="nav navbar-nav text-right">
+                                <ul id="PrinpipaNavBar" class="nav navbar-nav text-right">
                                     <li class="dropdown topheader">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">planes</a>
+                                        <a href="#" class="dropdown-toggle CustomFont" data-toggle="dropdown">PLANES</a>
                                     </li>
                                     <li class="dropdown topheading">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">clientes</a>
+                                        <a href="#" class="dropdown-toggle CustomFont" data-toggle="dropdown">CLIENTES</a>
                                     </li>
                                     <li class="dropdown topheading">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">reservar</i></a>
+                                        <a href="#" class="dropdown-toggle CustomFont" data-toggle="dropdown">RESERVAR</i></a>
                                     </li>
                                     <li class="dropdown topheading">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs</i></a>
+                                        <a href="#" class="dropdown-toggle CustomFont" data-toggle="dropdown">BLOG</i></a>
                                     </li>
                                     <li class="dropdown topheading">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">registro</i></a>
+                                        <a href="#" class="dropdown-toggle CustomFont" data-toggle="dropdown">FAQS</i></a>
+                                    </li>
+                                    <li class="dropdown topheading">
+                                        <a href="#" class="dropdown-toggle CustomFont" data-toggle="dropdown">REGISTRO</i></a>
                                     </li>
                                     @*<li class="dropdown topheading">
-                                        <a href="@Url.Action("Index", "Shop")">COMPRAR</i></a>
-                                    </li>*@
+            <a href="@Url.Action("Index", "Shop")">COMPRAR</i></a>
+        </li>*@
                                 </ul>
                             </div>
                         </nav>
@@ -136,7 +139,22 @@
     <!-- footer start here -->
     <footer>
         <div class="container">
-            <img id="FooterImage" src="~/images/nutriendo_vidas.png" />
+            <div class="col-md-12" style="text-align:center;">
+                <img  src="@Url.Content("~/images/black_logo.png")" style="height: 100px; margin-top:20px;"/>
+            </div>
+            <div class="col-md-6" style="text-align:center;">
+                <label style="font-size: 20px; font-weight: bolder;">COSTA RICA</label><br />
+                <label style="font-size: 20px; font-weight: bolder;">+506 88495315</label><br />
+                <label style="font-size: 20px; font-weight: bolder;">info@goodfoodcr.com</label><br />
+            </div>
+            <div class="col-md-6" style="text-align:center;">
+                <label style="font-size: 20px; font-weight: bolder;">COLOMBIA</label><br />
+                <label style="font-size: 20px; font-weight: bolder;">+507 88495315</label><br />
+                <label style="font-size: 20px; font-weight: bolder;">info@goodfoodcolombia.com</label><br />
+            </div>
+            <div class="col-md-12" style="text-align: center;">
+                <label style="font-size: 10px; ">Todos los derechos reservados. GoodFood® SA, 2018 </label>
+            </div>
         </div>
     </footer>
     <!-- footer end here -->
