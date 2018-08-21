@@ -165,7 +165,6 @@
     <None Include="wwwroot\Template\images\header4\product1.png" />
     <None Include="wwwroot\Template\images\header4\slider.png" />
     <None Include="wwwroot\Template\images\icon-payment.png" />
-    <None Include="wwwroot\Template\images\index-bg.png" />
     <None Include="wwwroot\Template\images\not-found.png" />
     <None Include="wwwroot\Template\images\post1.png" />
     <None Include="wwwroot\Template\images\product\1.png" />

@@ -1,6 +1,6 @@
 ﻿.rowBlock {
-    height: 640px;
-    padding: 100px;
+    height: 1040px;
+    padding-top: 365px;
     padding-left: 200px;
     padding-right: 200px;
 }
@@ -12,7 +12,7 @@
 
 .BlockLetter {
     font-family: BrandonGrotesque;
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 900;
     line-height: 95px;
 }
@@ -116,4 +116,97 @@ footer{
     background-image: url('../images/imagen-final.JPG');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.ReserveBotton {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    font-size: 29px;
+    padding-bottom: 20px;
+}
+
+/*SLIDER*/
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+}
+
+    #slider ul {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        list-style: none;
+    }
+
+        #slider ul li {
+            position: relative;
+            display: block;
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 1000px;
+            height: 300px;
+            padding: 40px;
+        }
+
+a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    width: auto;
+    height: auto;
+    color: #2a2a2a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 50px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+    a.control_prev:hover, a.control_next:hover {
+        opacity: 1;
+        -webkit-transition: all 0.2s ease;
+    }
+
+a.control_prev {
+    border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 1445px) {
+
+    .rowBlock {
+        height: 1040px;
+        padding-top: 365px;
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }
+
+    .MenuImages {
+        height: 600px !important;
+    }
+
+    #imgMoto{
+        margin-left: -40px !important;
+    }
 }

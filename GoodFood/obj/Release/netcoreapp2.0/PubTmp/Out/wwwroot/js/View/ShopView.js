@@ -52,7 +52,7 @@
 
                 }
 
-
+                debugger;
                 jq.find('#cntProducts').append(ProductsHTML);
 
 

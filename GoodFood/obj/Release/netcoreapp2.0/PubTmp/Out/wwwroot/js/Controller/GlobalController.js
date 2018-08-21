@@ -21,7 +21,7 @@
         };
 
         GlobalController.prototype.Init = function () {
-
+            debugger;
             this.View.SetItemToGlobalCart(this.GlobalCart);
         };
 

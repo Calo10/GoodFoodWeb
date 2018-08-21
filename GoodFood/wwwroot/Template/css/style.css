@@ -288,7 +288,7 @@ a:focus{
 [ Header / header ]
 ---------------------*/
 header{
-	background: url(../images/index-bg.png) center center;
+
 	padding:38px 0;	
 }
 header #logo{
@@ -603,16 +603,16 @@ header #srch button:hover, header #srch:hover button{
 .product-thumb .image .onhover ul li + li{
 	margin-top:10px;
 }
-.product-thumb .image .onhover button{
-	background:#13d22e;
-	border:none;
-	color:#fff;
-	padding:12px 14px 13px;
-	border-radius:50%;
-	width:50px;
-	height:50px;
-	text-align:center;
-}
+    .product-thumb .image .onhover button {
+        background: #aec24d;
+        border: none;
+        color: #fff;
+        padding: 12px 14px 13px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
 .product-thumb .image .onhover button:hover{
 	background:#17161f;
 }
@@ -640,13 +640,13 @@ header #srch button:hover, header #srch:hover button{
 .product-thumb .caption h4 span{
 	font-weight:700;
 }
-.product-thumb .caption .price{
-	font-size:24px;
-	font-weight:700;
-	color:#13d22e;
-}
+    .product-thumb .caption .price {
+        font-size: 24px;
+        font-weight: 700;
+        color: #ee5257;
+    }
 .product-thumb .caption .rating i{
-	color:686868;
+	color:#686868;
 	margin-right:5px;
 }
 .product-thumb .caption .des{
@@ -3012,22 +3012,22 @@ font-weight: 400;
     padding: 6px 20px;
     border-radius: 40px;
 }
-.slider-handle { 
-	background:#13d22e;
-	border-radius:50%;
-	height:16px;
-	width:16px;
-	display:inline-block;
-	padding:2px 1px;
-	position:absolute;
-	top:13px;
-	border:1px solid #fff;
+.slider-handle {
+    background: #afc24e;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    padding: 2px 1px;
+    position: absolute;
+    top: 13px;
+    border: 1px solid #fff;
 }
-.price-range { 
-	border: 3px solid #13d22e;
-	background:#13d22e ;
-	height:3px;
-	border-radius:4px;
+.price-range {
+    border: 3px solid #afc24e;
+    background: #afc24e;
+    height: 3px;
+    border-radius: 4px;
 }
 .price-range .bg{
 	background: #F3F3F3;
@@ -3177,12 +3177,12 @@ font-weight: 400;
 	font-weight:400;
 	border-radius:50%;
 }
-.pagination li  a:hover, .pagination  li span:hover, .pagination li a:focus, .pagination li span:focus, .pagination .active  a, .pagination  .active  span, .pagination  .active > a:hover, .pagination .active span:hover, .pagination .active a:focus, .pagination .active > span:focus{
-	background:#13d22e;
-	color:#fff;
-	border-color: #13d22e;
-	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.30);
-}
+    .pagination li a:hover, .pagination li span:hover, .pagination li a:focus, .pagination li span:focus, .pagination .active a, .pagination .active span, .pagination .active > a:hover, .pagination .active span:hover, .pagination .active a:focus, .pagination .active > span:focus {
+        background: #5a833a;
+        color: #fff;
+        border-color: #5a833a;
+        box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.30);
+    }
 .pagination  li:last-child a{
 	padding:5px 19px 1px;
 }
@@ -4059,13 +4059,13 @@ font-weight: 400;
 .mycart .listproducts{
 	margin:0 0 50px;
 }
-.mycart .listproducts thead td{
-	background:#13d22e;
-	color:#fff;
-	font-size:18px;
-	font-weight:500;
-	padding:15px 30px;	
-}
+    .mycart .listproducts thead td {
+        background: #aec24d;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 15px 30px;
+    }
 .mycart .listproducts tbody td{
 	padding:50px 30px;
 	vertical-align:middle;
@@ -4086,9 +4086,9 @@ font-weight: 400;
 	color:#17161f;
 	margin:34px 0 0;
 }
-.mycart .listproducts tbody td:nth-child(4), .mycart .listproducts tbody tr:last-child td:last-child{
-	color:#13d22e;
-}
+    .mycart .listproducts tbody td:nth-child(4), .mycart .listproducts tbody tr:last-child td:last-child {
+        color: #ee5257;
+    }
 .mycart .listproducts button{
 	background:none;
 	border:none;
@@ -4096,9 +4096,9 @@ font-weight: 400;
 	font-size:20px;
 	color:#17161f;
 }
-.mycart .listproducts tbody tr:last-child td{
-	color:#17161f;
-}
+    .mycart .listproducts tbody tr:last-child td {
+        color: #ee5257;
+    }
 .mycart .listproducts .qtypara .add {
 	right: 19%;
 }

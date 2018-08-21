@@ -4,14 +4,38 @@
 
 
 <!-- slider start here -->
-<div>
 
-</div>
+    <header>
+        <a href="/">
+            <img style="height: 70px; margin-top: 5px;" src="@Url.Content("~/images/white_logo.png")" />
+        </a>
+        <nav>
+            <ul>
+                <li><a href="/Shop">PLANES</a></li>
+                <li><a href="#pnlClients">CLIENTES</a></li>
+                <li><a href="/Shop">RESERVAR</a></li>
+                <li><a href="https://goodfoodcr.blogspot.com/">BLOG</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="/Home/RegisterUser">REGISTRO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-slider" style="height:1040px;">
+        <div class="item youtube">
+            <iframe class="embed-player slide-media" width="980" height="1040" src="https://www.youtube.com/embed/dqm24pnpbgg?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&playlist=tdwbYGe8pv8&start=102" frameborder="0" allowfullscreen></iframe>
+            <div class="captionSlider">
+                <p >ESTO NO ES UNA DIETA <br /> ESTO ES COMER BIEN</p>
+                <input type="button" class="ReserveBotton" style="background-color: #afc24e;" value="RESERVAR" />
+            </div>
+        </div>
+    </section>
+
+
 <!--Complete Program-->
 <div class="cotainer">
     <div class="row rowBlock" style="background-color: #dde0db;">
         <div class="col-md-4">
-            <img style="height:425px;" src="@Url.Content("~/images/Image1.png")"/>
+            <img style="height:470px;" src="@Url.Content("~/images/Image1.png")"/>
         </div> 
         <div class="col-md-8" style="margin-top: 50px;">
             <div class="row">
@@ -50,7 +74,7 @@
 </div>
 <!--Snacks -->
 <div class="cotainer">
-    <div class="row rowBlock" style="background-color: #dde0db;">
+    <div class="row rowBlock" style="background-color: #efdc76;">
         <div class="col-md-4">
             <img style="height:425px;" src="@Url.Content("~/images/Image3.png")" />
         </div>
@@ -71,7 +95,7 @@
 </div>
 <!--Gluten Free -->
 <div class="cotainer">
-    <div class="row rowBlock" style="background-color: #dde0db;">
+    <div class="row rowBlock" style="background-color: #dde0db; height:640px; padding-top: 100px;">
         <div class="col-md-7">
             <div class="row">
                 <p class="BlockLetterThird" style="color: #afc24e;">SIN GLUTEN.<br />SIN PRESERVANTES.<br />SIN LACTEOS.</p>
@@ -91,23 +115,23 @@
 </div>
 <!--Menu Sample -->
 <div class="cotainer">
-    <div class="row rowBlock" style="background-color: #f8b85a;">
+    <div class="row rowBlock" style="background-color: #f8b85a; padding-top: 78px;">
         <div class="col-md-4" style="text-align:center;">
-            <img id="" style="height:500px;" src="@Url.Content("~/images/Menu1.png")" />
+            <img id="" class="MenuImages" style="height:800px;" src="@Url.Content("~/images/Menu1.png")" />
         </div>
         <div class="col-md-4" style="text-align:center;">
-            <img id="" style="height:500px;" src="@Url.Content("~/images/Menu2.png")" />
+            <img id="" class="MenuImages" style="height:800px;" src="@Url.Content("~/images/Menu2.png")" />
         </div>
         <div class="col-md-4" style="text-align:center;">
-            <img id="" style="height:500px;" src="@Url.Content("~/images/Menu3.png")" />
+            <img id="" class="MenuImages" style="height:800px;" src="@Url.Content("~/images/Menu3.png")" />
         </div>
     </div>
 </div>
 <!--Moto -->
 <div class="cotainer">
-    <div class="row rowBlock" style="background-color: #fff;">
+    <div class="row rowBlock" style="background-color: #fff; height:640px; padding-top: 100px;">
         <div class="col-md-4" style="">
-            <img id="" style="height:500px; margin-left: -150px; height: 385px;" src="@Url.Content("~/images/Moto.png")" />
+            <img id="imgMoto" style="height:500px; margin-left: -150px; height: 385px;" src="@Url.Content("~/images/Moto.png")" />
         </div>
         <div class="col-md-8" style="margin-top:50px;">
             <div class="row">
@@ -124,9 +148,9 @@
 </div>
 <!--Next Groups -->
 <div class="cotainer">
-    <div class="row rowBlock" style="background-color: #dde0db; padding-top: 10px;">
+    <div class="row rowBlock" style="background-color: #dde0db; padding-top: 10px; height:640px; ">
         <div class="col-md-12" style="text-align:center;">
-            <p class="BlockLetterFifth" style="color: #434243;">PROXIMOS GRUPOS</p>
+            <p class="BlockLetterFifth" style="color: #434243; margin-bottom:25px;">PROXIMOS GRUPOS</p>
         </div>
         <div class="col-md-3" style="text-align:center; background-color:#edefec;">
             <div class="GroupsBox">
@@ -177,19 +201,94 @@
             </div>
         </div>
         <div class="col-md-12">
-            <p class="BlockLetterFourth" style="color:#434243; text-align:center;">Para nuestro programa completo de 21 dias, trabajamos con grupos con cupos limitados para chinearte y acompañarte de la mejor manera</p>
+            <p class="BlockLetterFourth" style="color:#434243; text-align:center; margin-top:40px;">
+                Para nuestro programa completo de 21 dias, trabajamos con grupos con cupos<br/> 
+                limitados para chinearte y acompañarte de la mejor manera
+            </p>
         </div>
     </div>
 </div>
 <!--Clients -->
-<div class="cotainer">
-    <div class="row">
-
+<div id="pnlClients" class="cotainer">
+    <div class="row rowBlock"  style="height:640px; padding-top: 100px;">
+        <div class="col-md-12" style="text-align:center;">
+            <p class="BlockLetterFifth" style="color: #434243;">QUE DICEN NUESTROS CLIENTES</p>
+        </div>
+        <div id="slider">
+            <a class="control_next">></a>
+            <a class="control_prev"><</a>
+            <ul>
+                <li>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p style="text-align: justify; font-family: BrandonGrotesque; font-size: 22px;">
+                                "Desde hace varios años mi nivel de "colesterol malo" habia estado en el limite de lo aceptable,
+                                pero al inicio de progra,a el doctor me informo que los resultados de mis examenes de sangre habian
+                                arrojado un nivel de colesterol Alto..."
+                            </p>
+                            <span class="pull-right">LEER MAS</span>
+                            <input type="button" class="BlockButton" style="background-color: #ecda77; margin-top: 50px;" value="COMPARTIR MI HISTORIA" />
+                        </div>
+                        <div class="col-md-4" style="text-align:center;">
+                            <img style="border-radius: 50%;" src="@Url.Content("~/images/PicSample.png")" />
+                        </div>
+                    </div>
+                </li>
+                <li style="">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p style="text-align: justify; font-family: BrandonGrotesque; font-size: 22px;">
+                                "Desde hace varios años mi nivel de "colesterol malo" habia estado en el limite de lo aceptable,
+                                pero al inicio de progra,a el doctor me informo que los resultados de mis examenes de sangre habian
+                                arrojado un nivel de colesterol Alto..."
+                            </p>
+                            <span class="pull-right">LEER MAS</span>
+                            <input type="button" class="BlockButton" style="background-color: #ecda77; margin-top: 50px;" value="COMPARTIR MI HISTORIA" />
+                        </div>
+                        <div class="col-md-4" style="text-align:center;">
+                            <img style="border-radius: 50%;" src="@Url.Content("~/images/PicSample.png")" />
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p style="text-align: justify; font-family: BrandonGrotesque; font-size: 22px;">
+                                "Desde hace varios años mi nivel de "colesterol malo" habia estado en el limite de lo aceptable,
+                                pero al inicio de progra,a el doctor me informo que los resultados de mis examenes de sangre habian
+                                arrojado un nivel de colesterol Alto..."
+                            </p>
+                            <span class="pull-right">LEER MAS</span>
+                            <input type="button" class="BlockButton" style="background-color: #ecda77; margin-top: 50px;" value="COMPARTIR MI HISTORIA" />
+                        </div>
+                        <div class="col-md-4" style="text-align:center;">
+                            <img style="border-radius: 50%;" src="@Url.Content("~/images/PicSample.png")" />
+                        </div>
+                    </div>
+                </li>
+                <li style="">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p style="text-align: justify; font-family: BrandonGrotesque; font-size: 22px;">
+                                "Desde hace varios años mi nivel de "colesterol malo" habia estado en el limite de lo aceptable,
+                                pero al inicio de progra,a el doctor me informo que los resultados de mis examenes de sangre habian
+                                arrojado un nivel de colesterol Alto..."
+                            </p>
+                            <span class="pull-right">LEER MAS</span>
+                            <input type="button" class="BlockButton" style="background-color: #ecda77; margin-top: 50px;" value="COMPARTIR MI HISTORIA" />
+                        </div>
+                        <div class="col-md-4" style="text-align:center;">
+                            <img style="border-radius: 50%;" src="@Url.Content("~/images/PicSample.png")" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 <!--Social Media -->
 <div class="cotainer">
-    <div class="row">
+    <div class="row" style="background-color: #cdd1d3;">
         <div class="col-md-12" style="text-align:center; padding:20px;">
             <img style="height:50px;" src="@Url.Content("~/images/InstagramIcon.png")" />
             <img style="height:50px; margin-left: 80px; margin-right: 80px;" src="@Url.Content("~/images/FacebookIcon.png")" />
@@ -204,7 +303,61 @@
 </div>
 <!--Footer -->
 <div class="cotainer">
-    <div class="row FooterImage" style="height:460px;">
+    <div class="row FooterImage" style=" height: 880px; opacity: 0.7;">
 
     </div>
 </div>
+
+@section JS{ 
+    <script>
+
+        jQuery(document).ready(function ($) {
+
+            $('#checkbox').change(function () {
+                setInterval(function () {
+                    moveRight();
+                }, 3000);
+            });
+
+            var slideCount = $('#slider ul li').length;
+            var slideWidth = $('#slider ul li').width() + 80;
+            var slideHeight = $('#slider ul li').height() + 80;
+            var sliderUlWidth = slideCount * slideWidth;
+
+            $('#slider').css({ width: slideWidth, height: slideHeight });
+
+            $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+            $('#slider ul li:last-child').prependTo('#slider ul');
+
+            function moveLeft() {
+                $('#slider ul').animate({
+                    left: + slideWidth
+                }, 200, function () {
+                    $('#slider ul li:last-child').prependTo('#slider ul');
+                    $('#slider ul').css('left', '');
+                });
+            };
+
+            function moveRight() {
+                $('#slider ul').animate({
+                    left: - slideWidth
+                }, 200, function () {
+                    $('#slider ul li:first-child').appendTo('#slider ul');
+                    $('#slider ul').css('left', '');
+                });
+            };
+
+            $('a.control_prev').click(function () {
+                moveLeft();
+            });
+
+            $('a.control_next').click(function () {
+     
+                moveRight();
+            });
+
+        });    
+
+    </script>
+}

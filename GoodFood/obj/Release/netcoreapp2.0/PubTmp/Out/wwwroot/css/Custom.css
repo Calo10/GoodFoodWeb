@@ -1,244 +1,8 @@
-﻿.FacebookButton{
-    width: 100% !important;
-}
-
-#HeaderLogo {
-    height: 84px;
-    margin-top: 19px !important;
-}
-
-#FooterImage{
-
-}
-
-.BoxShadow {
-    box-shadow: -1px 0px 26px -6px rgba(0,0,0,0.66);
-    border-radius: 10px;
-    padding-top: 100px !important;
-    padding-right: 70px !important;
-    padding-bottom: 100px !important;
-    padding-left: 70px !important;
-    background-color: #ffffff !important;
-}
-
-.bgimg {
-    background-image: url('../images/background_Image_1.png');
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-}
-
-.LoginOption {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-}
-
-.CenterMainLogo {
-    padding: 20px;
-    position: absolute;
-    left: 50%;
-    margin-top: 15%;
-    margin-left: -360px;
-    z-index: 2;
-    font-size: 60px !important;
-    display: grid;
-}
-
-.sliderText1 {
-    text-align: center;
-    color: #fff;
-    font-size: 70px;
-}
-
-.sliderText2 {
-    text-align: center;
-    color: #fff;
-    font-size: 70px;
-}
-
-
-
-.CenterMainButton {
-    padding: 5px;
-    z-index: 2;
-    font-size: xx-large !important;
-    color: #fff;
-    background-color: #368c84;
-    border-radius: 10px;
-    border: none;
-    margin-top: 30px;
-    width: 50%;
-}
-
-.owl-buttons {
-    display: none !important;
-}
-
-.MainLabelIndicators {
-    transform: rotate(-90deg);
-    font-size: small;
-    margin-left: -10px;
-    margin-top: 10%;
-    position: absolute;
-    letter-spacing: .2rem;
-}
-
-.Separator {
-    margin: auto;
-    margin-bottom: 35px;
-}
-
-.border {
-    position: fixed;
-    background: #fff;
-    z-index: 102;
-    backface-visibility: hidden;
-}
-
-.border.horizontal {
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 3;
-    height: 3rem;
-    background: #fff;
-    margin-top: 0;
-}
-
-.border.top {
-    top: 0;
-}
-
-.border.left {
-    left:0;
-}
-
-.border.right {
-    right:0;
-}
-
-.border.vertical {
-    top: 0;
-    bottom: 0;
-    width: 3rem;
-    height: 100%;
-}
-
-.CenterText {
-    font: 400 2rem/1.75rem 'Crimson Text',serif;
-    color: #fff;
-    text-align: justify;
-    line-height: 35px;
-}
-
-.TestimonialImage {
-    border-radius: 50%;
-}
-
-.NextGroupsContainer {
-    background-image: url('../images/nextgroup_image.JPG');
-    background-repeat: round;
-}
-
-.TestimonialContainer {
-    background-image: url('../images/testimonial_image.JPG');
-    background-repeat: round;
-}
-
-.FinalContainer {
-    background-image: url('../images/imagen-final.JPG');
-    background-repeat: round;
-}
-
-
-.GroupBox {
-    background-color: rgba(255,255,255,0.55) !important;
-    border-radius: 20px !important;
-    padding: 25px;
-}
-
-footer {
-    background: #ffffff;
-}
-
-.GroupButton {
-    padding: 7px;
-    z-index: 2;
-    font-size: large !important;
-    color: #fff;
-    background-color: #368c84;
-    border-radius: 10px;
-    border: none;
-    margin-top: 40px;
-    width: 100%;
-}
-
-.ProgramBox {
-    background-color: rgba(255,255,255,0.44) !important;
-    padding: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.ProgramText {
-    line-height: 1.5;
-    color: #000;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-#PrinpipaNavBar {
-    margin-top: 25px !important;
-}
-
-header {
-    padding-bottom: 6px;
-    
-}
-
-.header2 header {
-    position: fixed !important;
-}
-
-
-label {
-    font-family: HabelDemo;
-}
-
-p {
-    font-family: HabelDemo;
-}
-button {
-    font-family: HabelDemo;
-}
-
-.CompleteProgamBox {
-    background-color: #e58e56;
-    text-align: center;
-    padding: 50px;
-    height: 580px;
-    border-style: solid;
-    border-color: white;
-}
-
-.PlanTitles {
-    font-size: 70px;
-}
-
-.button1 {
-    width: 300px;
-    margin-top: 35px;
-}
-
-.button2 {
-    width: 300px;
-    margin-top: 123px;
-}
-
-.button3 {
-    width: 300px;
-    margin-top: 167px;
+﻿.rowBlock {
+    height: 1040px;
+    padding-top: 365px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 @font-face {
@@ -246,93 +10,203 @@ button {
     src: url("../fonts/BrandonGrotesque-Regular.woff") format("woff"), url("../fonts/BrandonGrotesque-Regular.woff") format("truetype");
 }
 
-@font-face {
-    font-family: CantoniPro;
-    src: url("../fonts/CantoniProBold.woff") format("woff"), url("../fonts/CantoniProBold.woff") format("truetype");
-}
-
-
-@font-face {
-    font-family: HabelDemo;
-    src: url("../fonts/HabelDemo.woff") format("woff"), url("../fonts/HabelDemo.woff") format("truetype");
-}
-
-.CustomFont {
+.BlockLetter {
     font-family: BrandonGrotesque;
-}
-.CustomFontProgramTitle {
-    font-family: CantoniPro;
-}
-
-.CustomFontHable {
-    font-family: HabelDemo;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 95px;
 }
 
-.diasLabel {
-    font-size: 150px;
+.BlockLetterSecundary {
+    font-family: BrandonGrotesque;
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.BlockButton {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+.BlockLetterThird {
+    font-family: BrandonGrotesque;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 63px;
+    text-align: center;
+}
+
+.BlockLetterFourth {
+    font-family: BrandonGrotesque;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 38px;
+    text-align: center;
+}
+
+#GlutenImage {
+    height: 640px;
+    margin-top: -150px;
+    margin-left: -87px;
+}
+
+.BlockLetterFifth {
+    font-family: BrandonGrotesque;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 63px;
+}
+
+.BlockLetterSixth {
+    font-family: BrandonGrotesque;
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 38px;
+}
+
+.NextGroupCircle {
+    border-bottom-width: 2px;
+    border-radius: 50%;
+    border-style: solid;
+    height: 112px;
+    width: 112px;
+    padding-top: 7%;
+    font-size: 25px;
+    margin: auto;s
+}
+
+.GroupsBox {
+    padding: 25px;
+}
+
+.GroupsText {
+    font-family: BrandonGrotesque;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 22px;
+}
+
+.SendButton {
+    background-color: white;
+    border-style: none;
     color: #000;
-    margin-top: -66px;
-    font-family: CantoniPro;
-    font-weight: 100;
+    padding: 5px;
 }
 
-.MenuBlock {
-    height:1110px;
+.EmailTextBox {
+    background: transparent;
+    border-color: white;
+    border-style: solid;
+    padding: 3px;
 }
 
-#ImgHeart {
-    height: 293px;
+footer{
+    background-color:#fff;
 }
 
-@media (min-width: 1440px) {
-
-    .MenuBlock {
-        height: 1410px;
-    }
-
-
+.FooterImage {
+    background-image: url('../images/imagen-final.JPG');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-@media (max-width: 1440px) {
-    .slideshow img {
-        width: 100%;
-        height: 550px;
+.ReserveBotton {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    font-size: 29px;
+    padding-bottom: 20px;
+}
+
+/*SLIDER*/
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+}
+
+    #slider ul {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        list-style: none;
     }
 
-    .MenuBlock {
-        height: 1110px;
+        #slider ul li {
+            position: relative;
+            display: block;
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 1000px;
+            height: 300px;
+            padding: 40px;
+        }
+
+a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    width: auto;
+    height: auto;
+    color: #2a2a2a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 50px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+    a.control_prev:hover, a.control_next:hover {
+        opacity: 1;
+        -webkit-transition: all 0.2s ease;
     }
 
-    .CenterMainLogo {
-        margin-left: -368px;
+a.control_prev {
+    border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 1445px) {
+
+    .rowBlock {
+        height: 1040px;
+        padding-top: 365px;
+        padding-left: 100px !important;
+        padding-right: 100px !important;
     }
 
-
-    .CompleteProgamBox {
-        background-color: #e58e56;
-        text-align: center;
-        padding: 50px;
-        height: 620px;
-        border-style: solid;
-        border-color: white;
+    .MenuImages {
+        height: 600px !important;
     }
 
-    .PlanTitles {
-        font-size: 60px;
-    }
-
-    .button1 {
-        width: 300px;
-        margin-top: 39px;
-    }
-
-    .button2 {
-        width: 300px;
-        margin-top: 127px;
-    }
-
-    .button3 {
-        width: 300px;
-        margin-top: 171px;
+    #imgMoto{
+        margin-left: -40px !important;
     }
 }

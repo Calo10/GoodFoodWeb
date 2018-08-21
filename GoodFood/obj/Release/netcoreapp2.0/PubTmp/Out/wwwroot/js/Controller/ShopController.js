@@ -27,7 +27,7 @@
         ShopController.prototype.Init = function () {
 
             try {
-                
+                debugger;
                 this.FillProductsForShop();
                 this.FillShoppingCartTable();
           
@@ -72,7 +72,7 @@
         };
 
         ShopController.prototype.AddToCart = function (id) {
-
+            debugger;
             try {
                 var actualItem;
 
@@ -110,7 +110,7 @@
     });
 
     jq.on('click', '#cntProducts .product-thumb .image .productMenuDisplay', function (e) {
- 
+        debugger;
         shopController.AddToCart((this).id);
     });
 

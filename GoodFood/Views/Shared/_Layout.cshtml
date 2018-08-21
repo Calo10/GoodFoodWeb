@@ -19,120 +19,18 @@
     <!-- stylesheet -->
     <link href=@Url.Content("~/Template/css/style.css") rel="stylesheet" type="text/css" />
     <link href=@Url.Content("~/css/Custom.css") rel="stylesheet" type="text/css" />
+    <link href=@Url.Content("~/css/Slick.css") rel="stylesheet" type="text/css" />
+    <link href=@Url.Content("~/css/VideoSlider.css") rel="stylesheet" type="text/css" />
+
 
     @RenderSection("CSS", false)
 
 </head>
-<body class="header2">
+<body class="">
     <!-- header start here-->
     <div class="border top horizontal"></div>
     <div class="border right vertical"></div>
     <div class="border left vertical"></div>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
-                    <div id="logo">
-                        <a href="@Url.Action("Index", "Home")">
-                            <img id="HeaderLogo" class="img-responsive" src="@Url.Content("~/images/white_logo.png")" alt="logo" title="Good Food" />
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
-                    <!-- menu start here -->
-                    <div id="menu">
-                        <nav class="navbar">
-                            <div class="navbar-header">
-                                <span class="menutext visible-xs">Menu</span>
-                                <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="btn btn-navbar navbar-toggle" type="button"><i class="fa fa-bars"></i></button>
-                            </div>
-                            <div class="collapse navbar-collapse navbar-ex1-collapse padd0">
-                                <ul id="PrinpipaNavBar" class="nav navbar-nav text-right">
-                                    <li class="dropdown topheader">
-                                        <a href="#" class="dropdown-toggle CustomFont" data-toggle="dropdown">PLANES</a>
-                                    </li>
-                                    <li class="dropdown topheading">
-                                        <a href="#" class="dropdown-toggle CustomFont" data-toggle="dropdown">CLIENTES</a>
-                                    </li>
-                                    <li class="dropdown topheading">
-                                        <a href="#" class="dropdown-toggle CustomFont" data-toggle="dropdown">RESERVAR</i></a>
-                                    </li>
-                                    <li class="dropdown topheading">
-                                        <a href="#" class="dropdown-toggle CustomFont" data-toggle="dropdown">BLOG</i></a>
-                                    </li>
-                                    <li class="dropdown topheading">
-                                        <a href="#" class="dropdown-toggle CustomFont" data-toggle="dropdown">FAQS</i></a>
-                                    </li>
-                                    <li class="dropdown topheading">
-                                        <a href="#" class="dropdown-toggle CustomFont" data-toggle="dropdown">REGISTRO</i></a>
-                                    </li>
-                                    @*<li class="dropdown topheading">
-            <a href="@Url.Action("Index", "Shop")">COMPRAR</i></a>
-        </li>*@
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                    <!-- menu end here -->
-                </div>
-                <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12 top">
-                    <ul class="list-inline pull-right  icons">
-                        <!-- Login-->
-                        <li class="dropdown login">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon_profile"></i> <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <button class="fac FacebookButton" type="button">Facebook</button>
-                                </li>
-                                <li style="height: 140px;">
-                                    <div>
-                                        <div class="LoginOption col-md-12">
-                                            <div class="col-md-2">
-                                                <a><i class="icon_profile"></i></a>
-                                            </div>
-                                            <div class="col-md-10">
-                                                <input id="txtMailLogin" class="form-control" type="text" placeholder="correo" />
-                                            </div>
-                                        </div>
-                                        <div class="LoginOption col-md-12">
-                                            <div class="col-md-2">
-                                                <a><i class="icon_archive"></i></a>
-                                            </div>
-                                            <div class="col-md-10">
-                                                <input id="txtPasswordLogin" class="form-control" type="password" placeholder="password" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="text-center">
-                                    <a href="Home/RegisterUser">Registrate</a>
-
-                                </li>
-                                <li>
-                                    <button id="btnLogin" class="btn" type="button">Login</button>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- Cart-->
-                        <li class="dropdown cart">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon_cart"></i></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <table class="table">
-                                        <tbody id="tblGlobalCart"></tbody>
-                                    </table>
-                                    <div class="buttons">
-                                        <button id="btnViewCartMain" class="btn-primary" type="button"><i class="icon_cart"></i> Ver Carrito</button>
-                                        <button id="btnViewCheckout" class="btn-primary" type="button"><i class="icon_box-checked"></i> Pagar</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
     <!-- header end here -->
 
     @RenderBody()
@@ -140,7 +38,7 @@
     <footer>
         <div class="container">
             <div class="col-md-12" style="text-align:center;">
-                <img  src="@Url.Content("~/images/black_logo.png")" style="height: 100px; margin-top:20px;"/>
+                <img src="@Url.Content("~/images/black_logo.png")" style="height: 100px; margin-top:20px;" />
             </div>
             <div class="col-md-6" style="text-align:center;">
                 <label style="font-size: 20px; font-weight: bolder;">COSTA RICA</label><br />
@@ -159,9 +57,9 @@
     </footer>
     <!-- footer end here -->
     <!-- modulejs -->
+    <script src="@Url.Content("~/Template/js/jquery.2.1.1.min.js")"></script>
     <script src="@Url.Content("~/lib/modulejs/modulejs-1.9.0.min.js")"></script>
     <!-- jquery -->
-    <script src="@Url.Content("~/Template/js/jquery.2.1.1.min.js")"></script>
     <!-- bootstrap js -->
     <script src="@Url.Content("~/Template/bootstrap/js/bootstrap.min.js")"></script>
     <!--bootstrap select-->
@@ -172,6 +70,11 @@
     <script src="@Url.Content("~/Template/js/owl-carousel/owl.carousel.min.js")"></script>
     <!-- Utilities -->
     <script type="text/javascript" src="@Url.Content("~/js/Controller/Utilities.js")"></script>
+
+
+    <script type="text/javascript" src="@Url.Content("~/js/Utilities/Slick.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/Utilities/VideoSlider.js")"></script>
+
 
 
     <script>
